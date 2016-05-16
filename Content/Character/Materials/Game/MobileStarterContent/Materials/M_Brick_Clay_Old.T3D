@@ -1,0 +1,108 @@
+Begin Object Class=Material Name="M_Brick_Clay_Old"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_81"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_85"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_86"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_70"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_71"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_41"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_60"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_61"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_81"
+      SizeX=620
+      SizeY=500
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorX=-928
+      MaterialExpressionGuid=14619C274C041B154ACEE7BEB12D3D24
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="MaterialExpressionComment_85"
+      SizeX=400
+      SizeY=340
+      Text="NormalTextureSamples"
+      MaterialExpressionEditorX=-928
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=4D06A48B407110532779A0B9A5862752
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="MaterialExpressionComment_86"
+      SizeX=440
+      SizeY=340
+      Text="BaseColorTextureSamples"
+      MaterialExpressionEditorX=-928
+      MaterialExpressionEditorY=-400
+      MaterialExpressionGuid=3C70ABB24CD6D6FC1767088F378761E0
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_70"
+      R=0.800000
+      MaterialExpressionEditorX=-796
+      MaterialExpressionEditorY=268
+      MaterialExpressionGuid=BCC5056C4EA274D1A56066B243B9A1B7
+      Material=Material'M_Brick_Clay_Old'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_71"
+      R=0.400000
+      MaterialExpressionEditorX=-796
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=926A03C444FC93E852AD9CB894E71891
+      Material=Material'M_Brick_Clay_Old'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_41"
+      A=(Expression=MaterialExpressionConstant'M_Brick_Clay_Old:MaterialExpressionConstant_71')
+      B=(Expression=MaterialExpressionConstant'M_Brick_Clay_Old:MaterialExpressionConstant_70')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Brick_Clay_Old:MaterialExpressionTextureSample_60',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=-576
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=324AF1BC424D7F45F608D5A822B0AD7A
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_60"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Clay_Old_D.T_Brick_Clay_Old_D'
+      MaterialExpressionEditorX=-876
+      MaterialExpressionEditorY=-320
+      MaterialExpressionGuid=1A697DBD44F36D04D49A6DBB113E489F
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_61"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Clay_Old_N.T_Brick_Clay_Old_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-832
+      MaterialExpressionEditorY=644
+      MaterialExpressionGuid=C1DACA704B85F5C04F7E14942715703E
+      Material=Material'M_Brick_Clay_Old'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_60',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=1,Mask=1,MaskR=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_41')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_61',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_60'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_41'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_61'
+   Expressions(3)=MaterialExpressionConstant'MaterialExpressionConstant_70'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_71'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_81'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_85'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_86'
+   StateId=1FF26A6D44353EF13DE745925205A931
+   ReferencedTextureGuids(0)=1732E957466A494F0E557FBCA4E0C76E
+   ReferencedTextureGuids(1)=2AFC776F432E32F206F3B6AD177C1CA1
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=2E630D3C409F5758F41CE286418152FB
+End Object

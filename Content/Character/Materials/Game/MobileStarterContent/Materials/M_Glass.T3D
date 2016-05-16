@@ -1,0 +1,68 @@
+Begin Object Class=Material Name="M_Glass"
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_5"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_8"
+   End Object
+   Begin Object Class=MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=10.000000
+      ParameterName="Specular"
+      ExpressionGUID=F8C6164A4581444178E6DFA686ABA926
+      Group="Glass"
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=120
+      MaterialExpressionGuid=C62D57424DBBD0D710306DAFA8AD7EDF
+      Material=Material'M_Glass'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_5"
+      ParameterName="Roughness"
+      ExpressionGUID=5441DE8041DB7AFE9498E6AC0C307942
+      Group="Glass"
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=220
+      MaterialExpressionGuid=796F5F5441728A718E03C0B69AF7D287
+      Material=Material'M_Glass'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_8"
+      DefaultValue=0.350000
+      ParameterName="Opacity"
+      ExpressionGUID=9ADA230041D06314B9EFB1A6D2BF9069
+      Group="Glass"
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=8FAC5CFB454D4BA68FCFBE92FC093623
+      Material=Material'M_Glass'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.000000,G=0.001202,B=0.003303,A=1.000000)
+      ParameterName="ColorGlass"
+      ExpressionGUID=431A065F45C84763958A91A547F1DD7A
+      Group="Glass"
+      MaterialExpressionEditorX=-440
+      MaterialExpressionEditorY=-140
+      MaterialExpressionGuid=C1B8E7B241685AE7EDEA409D07CFF3E3
+      Material=Material'M_Glass'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   BaseColor=(Expression=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_3')
+   Roughness=(Expression=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_5')
+   Opacity=(Expression=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_8')
+   BlendMode=BLEND_Translucent
+   bEnableSeparateTranslucency=False
+   TranslucencyLightingMode=TLM_Surface
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_0'
+   Expressions(1)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_3'
+   Expressions(2)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_5'
+   Expressions(3)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_8'
+   StateId=F45A171F4D1D240CE471479E78212C57
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_1'
+   LightingGuid=C136A0E94A62D8501DA02B971E66EFC2
+End Object

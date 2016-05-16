@@ -1,0 +1,53 @@
+Begin Object Class=Material Name="M_CobbleStone_Rough"
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_31"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_69"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_35"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(OutputIndex=4,Mask=1,MaskA=1)
+      Alpha=(Expression=MaterialExpressionTextureSampleParameter2D'M_CobbleStone_Rough:MaterialExpressionTextureSampleParameter2D_69',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.600000
+      MaterialExpressionEditorX=-1584
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=73BA2BB94FC2910BF2CBE1BDE5F238F1
+      Material=Material'M_CobbleStone_Rough'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_31"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Rough_D.T_CobbleStone_Rough_D'
+      MaterialExpressionEditorX=-1872
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=70AC861D47819D21DE97148B3C4E5B8A
+      Material=Material'M_CobbleStone_Rough'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_69"
+      ParameterName="NormalTexture"
+      ExpressionGUID=AD2CCE55409B333C0DD611B48C53D1FB
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Rough_N.T_CobbleStone_Rough_N'
+      MaterialExpressionEditorX=-1872
+      MaterialExpressionEditorY=304
+      MaterialExpressionGuid=5F16069944B8C70011C2ED9DB86BAAF2
+      Material=Material'M_CobbleStone_Rough'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_35"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Constant=0.423800,Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Normal=(Expression=MaterialExpressionTextureSampleParameter2D'MaterialExpressionTextureSampleParameter2D_69',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   bUsedWithStaticLighting=True
+   EditorX=-1280
+   EditorY=240
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(2)=MaterialExpressionTextureSampleParameter2D'MaterialExpressionTextureSampleParameter2D_69'
+   StateId=E2370CA247C9E468989F9EB670BE8C99
+   ReferencedTextureGuids(0)=E5F0C8F54C62F36DC715BFAC7300210E
+   ReferencedTextureGuids(1)=5259CF744F7D730EB9827C8342BF8DE4
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_35'
+   LightingGuid=4A446BE64FE0A1E580D7EDA181BB0BBA
+End Object

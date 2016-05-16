@@ -1,0 +1,132 @@
+Begin Object Class=Material Name="M_Metal_Gold"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_63"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_67"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_68"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_13"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_73"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_74"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_37"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_46"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_47"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_63"
+      SizeX=620
+      SizeY=500
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorX=-40
+      MaterialExpressionEditorY=-360
+      MaterialExpressionGuid=21521FC34CFD637DEC4804B0E670AD68
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionComment_67"
+      SizeX=380
+      SizeY=360
+      Text="NormalTextureSamples"
+      MaterialExpressionEditorX=64
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=40528EF74426F2F43C21999BF99AA789
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionComment_68"
+      SizeX=440
+      SizeY=340
+      Text="BaseColorTextureSamples"
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=-656
+      MaterialExpressionGuid=A40239494287BA818F2E60A361F3B55F
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_13"
+      R=1.000000
+      MaterialExpressionEditorX=608
+      MaterialExpressionEditorY=-272
+      MaterialExpressionGuid=537E31DC48466B3D7916E9AA53BE7B5D
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_73"
+      R=0.500000
+      MaterialExpressionEditorX=112
+      MaterialExpressionEditorY=-224
+      MaterialExpressionGuid=69E961C34C3EBCED5724C085CB727FE6
+      Material=Material'M_Metal_Gold'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_74"
+      R=0.300000
+      MaterialExpressionEditorX=100
+      MaterialExpressionEditorY=-120
+      MaterialExpressionGuid=4E2115CD4FD7DB7FC380799A7F16C471
+      Material=Material'M_Metal_Gold'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_37"
+      A=(Expression=MaterialExpressionConstant'M_Metal_Gold:MaterialExpressionConstant_73')
+      B=(Expression=MaterialExpressionConstant'M_Metal_Gold:MaterialExpressionConstant_74')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Metal_Gold:MaterialExpressionTextureSample_46',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=272
+      MaterialExpressionEditorY=-128
+      MaterialExpressionGuid=DC3DC6B44B217404C14DA4BCF620C957
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_46"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Gold_D.T_Metal_Gold_D'
+      MaterialExpressionEditorX=-428
+      MaterialExpressionEditorY=-560
+      MaterialExpressionGuid=FBAF21FB473F28FD6BC6D1828794E7F5
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_47"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Gold_N.T_Metal_Gold_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=156
+      MaterialExpressionEditorY=392
+      MaterialExpressionGuid=33E1EE204243F336CED6F3957FBB294C
+      Material=Material'M_Metal_Gold'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_46',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_13')
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_37')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_47',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   EditorX=720
+   EditorY=-304
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_46'
+   Expressions(1)=MaterialExpressionConstant'MaterialExpressionConstant_13'
+   Expressions(2)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_37'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_47'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_73'
+   Expressions(5)=MaterialExpressionConstant'MaterialExpressionConstant_74'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_63'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_67'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_68'
+   StateId=88235A2845C047B13865E2B784F396F7
+   ReferencedTextureGuids(0)=F70E4A8745905A038E12779D0E63C0E8
+   ReferencedTextureGuids(1)=7EC1A64B41E756342BB866B0EF5F2E58
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=F5AD12D34F8FA9929C5DC09E566C1FA3
+End Object

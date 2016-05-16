@@ -1,0 +1,66 @@
+Begin Object Class=Material Name="M_CobbleStone_Smooth"
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_31"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_69"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_35"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1"
+      A=(OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionTextureSample'M_CobbleStone_Smooth:MaterialExpressionTextureSample_3',OutputIndex=2,Mask=1,MaskG=1)
+      Alpha=(Expression=MaterialExpressionTextureSample'M_CobbleStone_Smooth:MaterialExpressionTextureSample_31',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      MaterialExpressionEditorX=-1568
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=9651EC694F8D2797391A6E9989829A15
+      Material=Material'M_CobbleStone_Smooth'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Smooth_M.T_CobbleStone_Smooth_M'
+      MaterialExpressionEditorX=-1952
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=DEF5A31744F3DA8DC09B2CA61F346CEC
+      Material=Material'M_CobbleStone_Smooth'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_31"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Smooth_D.T_CobbleStone_Smooth_D'
+      MaterialExpressionEditorX=-1956
+      MaterialExpressionEditorY=60
+      MaterialExpressionGuid=A2B4EBE5469EB8B61787F4A7687D5E38
+      Material=Material'M_CobbleStone_Smooth'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_69"
+      ParameterName="NormalTexture"
+      ExpressionGUID=AD2CCE55409B333C0DD611B48C53D1FB
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Smooth_N.T_CobbleStone_Smooth_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-1952
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=4C802C734364C8D2139448B51C5F2DED
+      Material=Material'M_CobbleStone_Smooth'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_35"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Constant=0.423800,Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_1')
+   Normal=(Expression=MaterialExpressionTextureSampleParameter2D'MaterialExpressionTextureSampleParameter2D_69',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_3',OutputIndex=2,Mask=1,MaskG=1)
+   bUsedWithStaticLighting=True
+   EditorX=-1280
+   EditorY=240
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_1'
+   Expressions(2)=MaterialExpressionTextureSampleParameter2D'MaterialExpressionTextureSampleParameter2D_69'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_3'
+   StateId=A8C1E275499EF1DE220970A163737CB1
+   ReferencedTextureGuids(0)=0373B66B4FE0F0A400918699E1615C9F
+   ReferencedTextureGuids(1)=10D95ED64DFD8FD5B0B013891C415CE0
+   ReferencedTextureGuids(2)=F6E5A20D499FCD288BBEDE95BE48B169
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_35'
+   LightingGuid=87C4FC974CD91C46350270B2A487187C
+End Object

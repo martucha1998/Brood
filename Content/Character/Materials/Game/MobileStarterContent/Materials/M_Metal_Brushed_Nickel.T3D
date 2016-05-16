@@ -1,0 +1,89 @@
+Begin Object Class=Material Name="M_Metal_Brushed_Nickel"
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_13"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_25"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_31"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_32"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_8"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_49"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_13"
+      R=1.000000
+      MaterialExpressionEditorX=544
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=423515F54CF611258D14BF963E5AD02E
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_25"
+      R=0.400000
+      MaterialExpressionEditorX=544
+      MaterialExpressionEditorY=-160
+      MaterialExpressionGuid=8E73FFC9437C1928E5B2CF83B1118E8F
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_31"
+      R=1.000000
+      MaterialExpressionEditorX=304
+      MaterialExpressionEditorY=-640
+      MaterialExpressionGuid=357584E44F4058103654D485B0BE1370
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_32"
+      R=0.800000
+      MaterialExpressionEditorX=296
+      MaterialExpressionEditorY=-568
+      MaterialExpressionGuid=6CB955E1425CC1DAAB38978B057BD515
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_8"
+      A=(Expression=MaterialExpressionConstant'M_Metal_Brushed_Nickel:MaterialExpressionConstant_31')
+      B=(Expression=MaterialExpressionConstant'M_Metal_Brushed_Nickel:MaterialExpressionConstant_32')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Metal_Brushed_Nickel:MaterialExpressionTextureSample_49',OutputIndex=1,Mask=1,MaskR=1)
+      MaterialExpressionEditorX=476
+      MaterialExpressionEditorY=-508
+      MaterialExpressionGuid=E61480124FF50C9CC6A49EAD584F3197
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_49"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_MacroVariation.T_MacroVariation'
+      MaterialExpressionEditorX=256
+      MaterialExpressionEditorY=-432
+      MaterialExpressionGuid=B40EE6834782BBA8D8E1CB88CCC8AE59
+      Material=Material'M_Metal_Brushed_Nickel'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_8')
+   Metallic=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_13')
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_25')
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   EditorX=720
+   EditorY=-304
+   Expressions(0)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_8'
+   Expressions(1)=MaterialExpressionConstant'MaterialExpressionConstant_13'
+   Expressions(2)=MaterialExpressionConstant'MaterialExpressionConstant_25'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_49'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_31'
+   Expressions(5)=MaterialExpressionConstant'MaterialExpressionConstant_32'
+   StateId=B13F4F3849DB956FC3CF9191435639E3
+   ReferencedTextureGuids(0)=B4B5B6704FA0E4D07876F78AC6898BE4
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=8115F65E45A0DD480656CD98FCFB2558
+End Object

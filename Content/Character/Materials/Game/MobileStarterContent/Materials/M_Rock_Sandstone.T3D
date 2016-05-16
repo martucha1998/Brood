@@ -1,0 +1,97 @@
+Begin Object Class=Material Name="M_Rock_Sandstone"
+   Begin Object Class=MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_91"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_92"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_93"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionTextureSample'M_Rock_Sandstone:MaterialExpressionTextureSample_1',OutputIndex=4,Mask=1,MaskA=1)
+      MaxDefault=0.500000
+      MaterialExpressionEditorX=112
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=0043916741301F64863BF1BD610B87D1
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="MaterialExpressionComment_91"
+      SizeX=440
+      SizeY=380
+      Text="Large Scale Tiling"
+      MaterialExpressionEditorX=-3120
+      MaterialExpressionEditorY=1360
+      MaterialExpressionGuid=07353C2E4701ACAE16FB9A93A483F1AF
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="MaterialExpressionComment_92"
+      SizeX=1072
+      SizeY=435
+      Text="Create a Gradient far away from the camera"
+      MaterialExpressionEditorX=-2080
+      MaterialExpressionEditorY=1540
+      MaterialExpressionGuid=A0CD64004459EC676D0EC5805ACC70A2
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="MaterialExpressionComment_93"
+      SizeX=472
+      SizeY=483
+      Text="Modulate Pixel Depth with Noise"
+      MaterialExpressionEditorX=-2600
+      MaterialExpressionEditorY=1440
+      MaterialExpressionGuid=61ECCBBB42FC0A4A9ED11198A1647845
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D'
+      MaterialExpressionEditorX=-80
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=34C56992482622DFF245238D06459FB6
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-80
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=16AF1E9142D59645E66A29945C7EC1C3
+      Material=Material'M_Rock_Sandstone'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionClamp'MaterialExpressionClamp_0')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   bFullyRough=True
+   EditorX=336
+   EditorY=64
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(1)=MaterialExpressionClamp'MaterialExpressionClamp_0'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_91'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_92'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_93'
+   StateId=04AAC8DD44832366500255BF52DB58D6
+   ReferencedTextureGuids(0)=9E646F0E412E000EEC9DD982CDD1111C
+   ReferencedTextureGuids(1)=E6A45BDE4AE59A204BB795A8D6021F34
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=FF4B9090447FD0F967A26398BE5E084D
+End Object

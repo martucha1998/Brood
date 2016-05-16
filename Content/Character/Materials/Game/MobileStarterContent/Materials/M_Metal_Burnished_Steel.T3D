@@ -1,0 +1,131 @@
+Begin Object Class=Material Name="M_Metal_Burnished_Steel"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_63"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_67"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_68"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_13"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_73"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_74"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_37"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_46"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_47"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_63"
+      SizeX=544
+      SizeY=464
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorY=-500
+      MaterialExpressionGuid=83C893C148EECECEADC65EAF99965122
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionComment_67"
+      SizeX=420
+      SizeY=360
+      Text="NormalTextureSamples"
+      MaterialExpressionEditorX=96
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=0D08181045C13765F572B6AB57CEC81F
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionComment_68"
+      SizeX=400
+      SizeY=340
+      Text="BaseColorTextureSamples"
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=-672
+      MaterialExpressionGuid=D6799FE740C684343AB69EA8BAB756C0
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_13"
+      R=1.000000
+      MaterialExpressionEditorX=576
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=9461ECE346D6D9408965E8A804AD353A
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_73"
+      R=0.300000
+      MaterialExpressionEditorX=120
+      MaterialExpressionEditorY=-380
+      MaterialExpressionGuid=A9A63179456958A597A7BC9046318EA0
+      Material=Material'M_Metal_Burnished_Steel'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_74"
+      R=0.100000
+      MaterialExpressionEditorX=120
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=4AABAF0A4AC5589F2B9452AD6845015C
+      Material=Material'M_Metal_Burnished_Steel'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_37"
+      A=(Expression=MaterialExpressionConstant'M_Metal_Burnished_Steel:MaterialExpressionConstant_73')
+      B=(Expression=MaterialExpressionConstant'M_Metal_Burnished_Steel:MaterialExpressionConstant_74')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Metal_Burnished_Steel:MaterialExpressionTextureSample_46',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=340
+      MaterialExpressionEditorY=-220
+      MaterialExpressionGuid=601B57ED40181F307A906D90620BBD34
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_46"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Aluminum_D.T_Metal_Aluminum_D'
+      MaterialExpressionEditorX=-508
+      MaterialExpressionEditorY=-588
+      MaterialExpressionGuid=BC4D20D348E4FD6B3DE45BBE1F63A910
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_47"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Gold_N.T_Metal_Gold_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=232
+      MaterialExpressionEditorY=212
+      MaterialExpressionGuid=A508FD9A46F81435E3F7EEBE75FE63A1
+      Material=Material'M_Metal_Burnished_Steel'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_46',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_13')
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_37')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_47',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   EditorX=720
+   EditorY=-304
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_46'
+   Expressions(1)=MaterialExpressionConstant'MaterialExpressionConstant_13'
+   Expressions(2)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_37'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_47'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_73'
+   Expressions(5)=MaterialExpressionConstant'MaterialExpressionConstant_74'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_63'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_67'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_68'
+   StateId=84B53F61447BD8B387C6D09230E17DB2
+   ReferencedTextureGuids(0)=F70E4A8745905A038E12779D0E63C0E8
+   ReferencedTextureGuids(1)=2BE5E8414D22A79FA9D91E91FBECA9A0
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=228C0CDC44AFC84083B57A9236F6BDB8
+End Object

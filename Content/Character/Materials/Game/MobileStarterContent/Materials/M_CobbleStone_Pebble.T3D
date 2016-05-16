@@ -1,0 +1,59 @@
+Begin Object Class=Material Name="M_CobbleStone_Pebble"
+   Begin Object Class=MaterialExpressionClamp Name="MaterialExpressionClamp_2"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_2"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionClamp_2"
+      Input=(Expression=MaterialExpressionLinearInterpolate'M_CobbleStone_Pebble:MaterialExpressionLinearInterpolate_2')
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=69929A2E4F4D541994D181B3F0E7FE4B
+      Material=Material'M_CobbleStone_Pebble'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_2"
+      Alpha=(Expression=MaterialExpressionTextureSample'M_CobbleStone_Pebble:MaterialExpressionTextureSample_3',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=-1.750000
+      ConstAlpha=0.000000
+      MaterialExpressionEditorX=-532
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=48D2ACA44B4B07D46BC43889A6A06A58
+      Material=Material'M_CobbleStone_Pebble'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Pebble_D.T_CobbleStone_Pebble_D'
+      MaterialExpressionEditorX=-820
+      MaterialExpressionEditorY=-120
+      MaterialExpressionGuid=D98728434ADD9B15A535978B5F4364BC
+      Material=Material'M_CobbleStone_Pebble'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_CobbleStone_Pebble_N.T_CobbleStone_Pebble_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=C52C782A4629805267D14A8FB29E43CF
+      Material=Material'M_CobbleStone_Pebble'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_3',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionClamp'MaterialExpressionClamp_2')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_3'
+   Expressions(1)=MaterialExpressionClamp'MaterialExpressionClamp_2'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4'
+   Expressions(3)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_2'
+   StateId=7B0DD506438DFBEE316281A9EC8FE043
+   ReferencedTextureGuids(0)=8E32B952442918698AF48CA7B2B9BA2D
+   ReferencedTextureGuids(1)=66992029400C43B2EF9DB0B22452FA71
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=45F04C2D4EA50CBFF5E90CA24E4366A5
+End Object

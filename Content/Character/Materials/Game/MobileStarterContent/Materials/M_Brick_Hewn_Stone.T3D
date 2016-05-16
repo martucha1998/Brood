@@ -1,0 +1,62 @@
+Begin Object Class=Material Name="M_Brick_Hewn_Stone"
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_31"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_7"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Brick_Hewn_Stone:MaterialExpressionTextureSample_2',OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=-0.300000
+      ConstB=0.800000
+      MaterialExpressionEditorX=-48
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=8D52FE6444A8046667B035AE2BD70FDF
+      Material=Material'M_Brick_Hewn_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Hewn_Stone_M.T_Brick_Hewn_Stone_M'
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=624
+      MaterialExpressionGuid=5FAFBDF64D93B13C6CA8689B15564048
+      Material=Material'M_Brick_Hewn_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_31"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Hewn_Stone_N.T_Brick_Hewn_Stone_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-48
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=2EDD94454ADFD9CE6AA80C9614DCA219
+      Material=Material'M_Brick_Hewn_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Hewn_Stone_D.T_Brick_Hewn_Stone_D'
+      MaterialExpressionEditorX=-64
+      MaterialExpressionEditorY=368
+      MaterialExpressionGuid=A049A16F42D488ACC4554895AF578AC0
+      Material=Material'M_Brick_Hewn_Stone'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_7"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2',OutputIndex=2,Mask=1,MaskG=1)
+   bUsedWithStaticLighting=True
+   EditorX=608
+   EditorY=480
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_31'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   StateId=9A312ECF43DEF66EA2546E9391E0A892
+   ReferencedTextureGuids(0)=63B661854AD2409773E16B81F23BFCA8
+   ReferencedTextureGuids(1)=E7601B9242986EFFD0DD319A75E4B3A1
+   ReferencedTextureGuids(2)=8FC20A184A621552738C3DB200F6006B
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_7'
+   LightingGuid=524786C44D88BBEBB2D7479C5C980809
+End Object

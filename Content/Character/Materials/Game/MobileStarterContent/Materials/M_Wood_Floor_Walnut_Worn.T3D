@@ -1,0 +1,89 @@
+Begin Object Class=Material Name="M_Wood_Floor_Walnut_Worn"
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_4"
+   End Object
+   Begin Object Class=MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Wood_Floor_Walnut_Worn:MaterialExpressionTextureSample_2',OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=0.500000
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=8DFBC3B1407D9BEA5681E296B5A19D85
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4"
+      A=(Expression=MaterialExpressionTextureSample'M_Wood_Floor_Walnut_Worn:MaterialExpressionTextureSample_2',OutputIndex=4,Mask=1,MaskA=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-208
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=0E6EFB1E4079721F6591B88F39EEA71D
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      UTiling=0.500000
+      VTiling=0.500000
+      MaterialExpressionEditorX=-960
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=0CB6C7034C3575F9746A8987918C8E5E
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionTextureCoordinate'M_Wood_Floor_Walnut_Worn:MaterialExpressionTextureCoordinate_0')
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Wood_Floor_Walnut_D.T_Wood_Floor_Walnut_D'
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=-160
+      MaterialExpressionGuid=3D864F3E470857FA8E66DE80DE60A8D0
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+      Desc="Alpha is Cavity Mask"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Coordinates=(Expression=MaterialExpressionTextureCoordinate'M_Wood_Floor_Walnut_Worn:MaterialExpressionTextureCoordinate_0')
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Wood_Floor_Walnut_N.T_Wood_Floor_Walnut_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=03683EEB401E5D713F1D4BBBEFCAD45B
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Coordinates=(Expression=MaterialExpressionTextureCoordinate'M_Wood_Floor_Walnut_Worn:MaterialExpressionTextureCoordinate_0')
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Wood_Floor_Walnut_M.T_Wood_Floor_Walnut_M'
+      MaterialExpressionEditorX=-608
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=8CFF649542333A5906F8829EE09B3144
+      Material=Material'M_Wood_Floor_Walnut_Worn'
+      Desc="Alpha is AO"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionMultiply'MaterialExpressionMultiply_4')
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2',OutputIndex=4,Mask=1,MaskA=1)
+   bUsedWithStaticLighting=True
+   EditorX=176
+   EditorY=80
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_0'
+   Expressions(1)=MaterialExpressionMultiply'MaterialExpressionMultiply_4'
+   Expressions(2)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(4)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   Expressions(5)=MaterialExpressionTextureCoordinate'MaterialExpressionTextureCoordinate_0'
+   StateId=1F56EC3648D4FA094CBE249FD867964D
+   ReferencedTextureGuids(0)=7D7C8F32433D5A13E26DE7A395795F18
+   ReferencedTextureGuids(1)=346CEE0E41937838D2D9EB8DCE7F7E7B
+   ReferencedTextureGuids(2)=5B8141ED431868B845F023A6CE8CB84F
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=7A8E7204473E292AD1AEA397C18443EF
+End Object

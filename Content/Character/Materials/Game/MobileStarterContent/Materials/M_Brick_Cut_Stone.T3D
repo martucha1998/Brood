@@ -1,0 +1,121 @@
+Begin Object Class=Material Name="M_Brick_Cut_Stone"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_25"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_26"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_30"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_21"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_22"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_12"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_18"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_19"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_25"
+      SizeX=380
+      SizeY=340
+      Text="BaseColorTextureSamples"
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=-464
+      MaterialExpressionGuid=E7F872FF482E2FC9A50DB7AA2D8543C9
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionComment_26"
+      SizeX=400
+      SizeY=360
+      Text="NormalTextureSamples"
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=544
+      MaterialExpressionGuid=AAE88BE64719EF1311E3A7BB35887DF8
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionComment_30"
+      SizeX=620
+      SizeY=500
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorX=-700
+      MaterialExpressionEditorY=-40
+      MaterialExpressionGuid=E72E236E4685BC7E65FDA3968A858F4B
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_21"
+      R=0.800000
+      MaterialExpressionEditorX=-540
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=836CEC4045697B06AA45449603F50A22
+      Material=Material'M_Brick_Cut_Stone'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_22"
+      R=0.300000
+      MaterialExpressionEditorX=-540
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=4B86A8054D8E60C4192926AB33ACBCBA
+      Material=Material'M_Brick_Cut_Stone'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_12"
+      A=(Expression=MaterialExpressionConstant'M_Brick_Cut_Stone:MaterialExpressionConstant_21')
+      B=(Expression=MaterialExpressionConstant'M_Brick_Cut_Stone:MaterialExpressionConstant_22')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Brick_Cut_Stone:MaterialExpressionTextureSample_18',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=A8E3029942B4D2F7940A4C86669A626F
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_18"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D'
+      MaterialExpressionEditorX=-668
+      MaterialExpressionEditorY=-372
+      MaterialExpressionGuid=22E5708D4FE310C37136D588F1855B51
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_19"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Cut_Stone_N.T_Brick_Cut_Stone_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-604
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=EE277E5249A54D2997B7FB93B96D0D82
+      Material=Material'M_Brick_Cut_Stone'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_18',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_12')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_19',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   EditorX=80
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_18'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_12'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_19'
+   Expressions(3)=MaterialExpressionConstant'MaterialExpressionConstant_21'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_22'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_25'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_26'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_30'
+   StateId=4476B33C4A51ADF239D1F8A4AFDB65F7
+   ReferencedTextureGuids(0)=FAC9C52041B1018D8C1C358167B78B51
+   ReferencedTextureGuids(1)=3E953EDA4EA7D1FD7B175ABAE79705EC
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=DC9C39A54E48DEB9794EC0BFB2F16050
+End Object

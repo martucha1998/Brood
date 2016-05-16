@@ -1,0 +1,103 @@
+Begin Object Class=Material Name="M_Rock_Marble_Polished"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_0"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_18"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_3"
+   End Object
+   Begin Object Class=MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_13"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_0"
+      SizeX=497
+      SizeY=367
+      Text="Make normal less powerful"
+      MaterialExpressionEditorX=-144
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=FC3A08A745304390BD0549834EFA53A3
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionComment_18"
+      SizeX=420
+      SizeY=400
+      Text="NormalTextureSamples"
+      MaterialExpressionEditorX=-644
+      MaterialExpressionEditorY=564
+      MaterialExpressionGuid=5C8A2DEF43FEAADAF0371C8B007F7707
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3"
+      MaterialExpressionEditorX=288
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=C2C2DB174EC002AA75A259BE5A4E5615
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=0.500000,G=0.500000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=308
+      MaterialExpressionGuid=47374FD44005CCAEC47AE394BE0ACE45
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionConstant3Vector'M_Rock_Marble_Polished:MaterialExpressionConstant3Vector_0')
+      B=(Expression=MaterialExpressionTextureSample'M_Rock_Marble_Polished:MaterialExpressionTextureSample_13',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=179
+      MaterialExpressionEditorY=426
+      MaterialExpressionGuid=6C64EE204594F8A23AC57BBC331952E5
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.T_Rock_Marble_Polished_D'
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=-176
+      MaterialExpressionGuid=344D5C0B4C39D68C4E24FC91C28036F7
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_13"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Gold_N.T_Metal_Gold_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=684
+      MaterialExpressionGuid=1B8B9BA74E807AA4C225069C049B7219
+      Material=Material'M_Rock_Marble_Polished'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_3')
+   Normal=(Expression=MaterialExpressionMultiply'MaterialExpressionMultiply_1')
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=12,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   EditorX=464
+   EditorY=-80
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(1)=MaterialExpressionConstant'MaterialExpressionConstant_3'
+   Expressions(2)=MaterialExpressionMultiply'MaterialExpressionMultiply_1'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_13'
+   Expressions(4)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_0'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_18'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_0'
+   StateId=AB8A717946A284EBD8DDCBAC3256DD43
+   ReferencedTextureGuids(0)=F70E4A8745905A038E12779D0E63C0E8
+   ReferencedTextureGuids(1)=1E4D0F81429197829A9C5CAEECCB7CF6
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=4CBBC6FF4E3AE59064D94A93A1C4051B
+End Object

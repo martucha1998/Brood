@@ -1,0 +1,95 @@
+Begin Object Class=Material Name="M_Rock_Basalt"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_22"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_15"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_16"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_8"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_6"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_7"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_22"
+      SizeX=544
+      SizeY=352
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=-32
+      MaterialExpressionGuid=5E5A59774D2A9AC85D9EEF87C47F7415
+      Material=Material'M_Rock_Basalt'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_15"
+      R=0.800000
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=778BB49048DE62550631019049C8EDC9
+      Material=Material'M_Rock_Basalt'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_16"
+      R=0.500000
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=E5930395460CFBFE98E80FAA8D04320A
+      Material=Material'M_Rock_Basalt'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_8"
+      A=(Expression=MaterialExpressionConstant'M_Rock_Basalt:MaterialExpressionConstant_15')
+      B=(Expression=MaterialExpressionConstant'M_Rock_Basalt:MaterialExpressionConstant_16')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Rock_Basalt:MaterialExpressionTextureSample_6',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=-444
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=28CBF1624A572949FBA6C3966CD6BB58
+      Material=Material'M_Rock_Basalt'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_6"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Basalt_D.T_Rock_Basalt_D'
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=-304
+      MaterialExpressionGuid=816B9ECC4E4A44A0D17083B682B4D98D
+      Material=Material'M_Rock_Basalt'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_7"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-432
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=DE86136B4F846CC048711A99D2867351
+      Material=Material'M_Rock_Basalt'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_6',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=4,Mask=1,MaskA=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_8')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_7',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=12,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_6'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_8'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_7'
+   Expressions(3)=MaterialExpressionConstant'MaterialExpressionConstant_15'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_16'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_22'
+   StateId=7BD40CEE435BB3BF5EADEBA77A187037
+   ReferencedTextureGuids(0)=04A6FA3343D835102FBBA6952FA82F18
+   ReferencedTextureGuids(1)=E890207A482994154CF06989F6AE520D
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=3A53507C4D82A234EFA255BD8D0E4D3B
+End Object

@@ -1,0 +1,48 @@
+Begin Object Class=Material Name="M_Ground_Grass"
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_12"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_29"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_12"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D'
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=-32
+      MaterialExpressionGuid=E4903B8F4B445666BD50D39F5B3A6994
+      Material=Material'M_Ground_Grass'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_29"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=3A0581664241BF50A2470E9212F1E11D
+      Material=Material'M_Ground_Grass'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_12',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=4,Mask=1,MaskA=1)
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_29',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=12,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   bFullyRough=True
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_12'
+   Expressions(1)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_29'
+   StateId=349CC8F94B7F2C3DD71FC5BDB3612B95
+   ReferencedTextureGuids(0)=CA1317554CF63D6A5A17F28362B965AB
+   ReferencedTextureGuids(1)=D1B6C202492E17B31037D797A7669DC4
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=CFF539E24C9FBD3F23253E8A4598D1C2
+End Object

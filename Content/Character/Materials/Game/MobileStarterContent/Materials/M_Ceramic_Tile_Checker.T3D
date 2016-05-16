@@ -1,0 +1,213 @@
+Begin Object Class=Material Name="M_Ceramic_Tile_Checker"
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_0"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_24"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_25"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_4"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_36"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_37"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_14"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_2"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_4"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_7"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_50"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_51"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_52"
+   End Object
+   Begin Object Class=MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionComment_0"
+      SizeX=400
+      SizeY=320
+      Text="Normal texture sample"
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=D833CE624E04561D88645C8A966B22FF
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionComment_24"
+      SizeX=544
+      SizeY=384
+      Text="Alpha Of Base Color Defines Roughness"
+      MaterialExpressionEditorX=-744
+      MaterialExpressionEditorY=-424
+      MaterialExpressionGuid=046FBA654AE7636368D00B97932D315F
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionComment_25"
+      SizeX=912
+      SizeY=800
+      Text="Tile Colors"
+      MaterialExpressionEditorX=-1856
+      MaterialExpressionEditorY=-48
+      MaterialExpressionGuid=2F15257441F5803FEA8304AF45690DDC
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionComment_4"
+      SizeX=288
+      SizeY=320
+      Text="Marble texture used as a detail texture"
+      MaterialExpressionEditorX=-1232
+      MaterialExpressionEditorY=-400
+      MaterialExpressionGuid=30717D9C4E827E0508A3FCAB2CA1BEDB
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_36"
+      R=0.500000
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=-336
+      MaterialExpressionGuid=723DECA04CF65F8FD16386833A1E4B3D
+      Material=Material'M_Ceramic_Tile_Checker'
+      Desc="RoughnessMax"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_37"
+      R=0.200000
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=2F26AAF648C98029D5675092AD530FCD
+      Material=Material'M_Ceramic_Tile_Checker'
+      Desc="RoughnessMin"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1"
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Ceramic_Tile_Checker:MaterialExpressionTextureSample_52',OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=0.500000
+      MaterialExpressionEditorX=-1376
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=57BE6F804A5F1EC7D4CA81AD4B9FD379
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_14"
+      A=(Expression=MaterialExpressionConstant'M_Ceramic_Tile_Checker:MaterialExpressionConstant_36')
+      B=(Expression=MaterialExpressionConstant'M_Ceramic_Tile_Checker:MaterialExpressionConstant_37')
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Ceramic_Tile_Checker:MaterialExpressionTextureSample_50',OutputIndex=4,Mask=1,MaskA=1)
+      ConstA=1.000000
+      ConstB=0.000000
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=-272
+      MaterialExpressionGuid=E975EBE34CFEC96A8133879C0A7E4C0E
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_2"
+      A=(Expression=MaterialExpressionVectorParameter'M_Ceramic_Tile_Checker:MaterialExpressionVectorParameter_2',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'M_Ceramic_Tile_Checker:MaterialExpressionVectorParameter_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Ceramic_Tile_Checker:MaterialExpressionTextureSample_52',OutputIndex=3,Mask=1,MaskB=1)
+      MaterialExpressionEditorX=-1368
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=AB2DF50B476F7946A87F1693224689E2
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4"
+      A=(Expression=MaterialExpressionTextureSample'M_Ceramic_Tile_Checker:MaterialExpressionTextureSample_50',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'M_Ceramic_Tile_Checker:MaterialExpressionMultiply_7')
+      MaterialExpressionEditorX=-816
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=F3D4ABB84F44988CE4C2CD823BBF75D3
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_7"
+      A=(Expression=MaterialExpressionLinearInterpolate'M_Ceramic_Tile_Checker:MaterialExpressionLinearInterpolate_2')
+      B=(Expression=MaterialExpressionLinearInterpolate'M_Ceramic_Tile_Checker:MaterialExpressionLinearInterpolate_1')
+      MaterialExpressionEditorX=-1232
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=CD0DC75C4B63E0589797B7B7FC3B2039
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_50"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.T_Rock_Marble_Polished_D'
+      MaterialExpressionEditorX=-1204
+      MaterialExpressionEditorY=-324
+      MaterialExpressionGuid=367F8C2E4E4D6E46DA7B62A3EB5C2987
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_51"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Ceramic_Tile_N.T_Ceramic_Tile_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-677
+      MaterialExpressionEditorY=414
+      MaterialExpressionGuid=22042AFD46676FCD2FF69693CFE87779
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_52"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Ceramic_Tile_M.T_Ceramic_Tile_M'
+      SamplerType=SAMPLERTYPE_Masks
+      MaterialExpressionEditorX=-1744
+      MaterialExpressionEditorY=464
+      MaterialExpressionGuid=588253A74DA90AE1C589628D73F73949
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.410000,G=0.410000,B=0.410000,A=0.100000)
+      ParameterName="Color2"
+      ExpressionGUID=9B4FD16E4C17C9D23D4599AD4A13CD8A
+      MaterialExpressionEditorX=-1712
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=9A34B02748C4B8A6A6F0B2B7EAF2F21F
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=0.825000,G=0.810167,B=0.787875,A=0.100000)
+      ParameterName="Color3"
+      ExpressionGUID=93D63B80414599CA073CAEAB819D1575
+      MaterialExpressionEditorX=-1719
+      MaterialExpressionEditorY=65
+      MaterialExpressionGuid=9B3A006741F6E5E5A0435EB20E8DE36D
+      Material=Material'M_Ceramic_Tile_Checker'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionMultiply'MaterialExpressionMultiply_4')
+   Metallic=(OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(OutputIndex=2,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_14')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_51',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=12,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithLandscape=True
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionMultiply'MaterialExpressionMultiply_4'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_14'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_51'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_50'
+   Expressions(4)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_52'
+   Expressions(5)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_1'
+   Expressions(6)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_2'
+   Expressions(7)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_2'
+   Expressions(8)=MaterialExpressionConstant'MaterialExpressionConstant_36'
+   Expressions(9)=MaterialExpressionConstant'MaterialExpressionConstant_37'
+   Expressions(10)=MaterialExpressionMultiply'MaterialExpressionMultiply_7'
+   Expressions(11)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_1'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_24'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_25'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_4'
+   EditorComments(3)=MaterialExpressionComment'MaterialExpressionComment_0'
+   StateId=73A11C144B1DB8CE1ACE749A4B894D67
+   ReferencedTextureGuids(0)=95581B51430AEC059FEBD79F812922FE
+   ReferencedTextureGuids(1)=1E4D0F81429197829A9C5CAEECCB7CF6
+   ReferencedTextureGuids(2)=AB236E40418684450D50F4A3EBF1371B
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=45E5D98445727CA3B72C978ABE237FC3
+End Object

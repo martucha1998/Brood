@@ -1,0 +1,48 @@
+Begin Object Class=Material Name="M_Metal_Rust"
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_55"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Rust_N.T_Metal_Rust_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=144
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=A942C65C45A91751B9328CBC8FC690B8
+      Material=Material'M_Metal_Rust'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_55"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Metal_Rust_D.T_Metal_Rust_D'
+      MaterialExpressionEditorX=112
+      MaterialExpressionEditorY=-80
+      MaterialExpressionGuid=98A9C8E94CB95A6C368454BD0D354F2E
+      Material=Material'M_Metal_Rust'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_55',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_55',OutputIndex=4,Mask=1,MaskA=1)
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_5',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=4,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   OpacityMask=(OutputIndex=6,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldPositionOffset=(OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   WorldDisplacement=(OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   TessellationMultiplier=(OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SubsurfaceColor=(OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=4,Mask=1,MaskA=1)
+   Refraction=(OutputIndex=13,Mask=1,MaskR=1,MaskG=1)
+   bUsedWithStaticLighting=True
+   bFullyRough=True
+   EditorX=480
+   EditorY=-32
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_55'
+   Expressions(1)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_5'
+   StateId=2374FD574AF2E30596D80797CB88E7B4
+   ReferencedTextureGuids(0)=14FBB07E4692E2DC1AE1DAB4B0BB13B6
+   ReferencedTextureGuids(1)=32A354F34699E5EFEB25B6B08631A21D
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=F3263AA647FF402CCD3742BFCE7D83F2
+End Object

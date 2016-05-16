@@ -1,0 +1,62 @@
+Begin Object Class=Material Name="M_Brick_Clay_Beveled"
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_7"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      Alpha=(Expression=MaterialExpressionTextureSample'M_Brick_Clay_Beveled:MaterialExpressionTextureSample_2',OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=0.300000
+      ConstB=0.800000
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=7B321AEB4A543B65A8CE48A1D8DE739E
+      Material=Material'M_Brick_Clay_Beveled'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=752
+      MaterialExpressionGuid=C7DA3D314008F2E84D407A91404F7C23
+      Material=Material'M_Brick_Clay_Beveled'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M'
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=350A6195430A653B50FB489C1A72BDBE
+      Material=Material'M_Brick_Clay_Beveled'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'/Game/MobileStarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D'
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=B2FF28F74C592FE1C921878357363C10
+      Material=Material'M_Brick_Clay_Beveled'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_7"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2',OutputIndex=2,Mask=1,MaskG=1)
+   bUsedWithStaticLighting=True
+   EditorX=608
+   EditorY=480
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4'
+   Expressions(1)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   StateId=052877A84C4637345885F89B3D7A3C6E
+   ReferencedTextureGuids(0)=6BDDE9744533133AC9F4EC8E7FE4A568
+   ReferencedTextureGuids(1)=62406248425AC26171D7FEB1C54F64CE
+   ReferencedTextureGuids(2)=796B3B2244B50B1B150DD895633FD58D
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_7'
+   LightingGuid=3893D4FA4B6C373662E9CFA98DC2B1AE
+End Object
